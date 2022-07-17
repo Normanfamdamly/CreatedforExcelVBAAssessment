@@ -9,6 +9,9 @@ file_to_Save = os.path.join("analysis", "election_analysis.txt")
 # 1. The total number of votes cast
 total_votes = 0
 
+# Canidate Options
+canidate_options = []
+
 # Open election results and read the file
 with open(file_to_load) as election_data:
     # To Do: read and analyze the data here
@@ -23,8 +26,17 @@ with open(file_to_load) as election_data:
         # 2. A complete list of canidates who receied votes     
         total_votes += 1
 
+        # Print the canidiate name from each row
+        canidate_name = row[2]
+
+        # If the canidate does not any exisitng canidate . . .
+        if canidate_name not in canidate_options:
+            # Add the canidate name to the canidate list.
+            canidate_options.append(canidate_name)   
+
 # 3a Print the total votes
-        print(row)
+print(canidate_options)
+
 
 
 
@@ -38,18 +50,7 @@ with open(file_to_load) as election_data:
 election_data.close()
 # Print out the election data 
 
-# Create a filename variable to a direct or indirect path to the file.
-file_to_save = os.path.join("analysis", "election_analysis.txt")
-# Using the optn statement to open the file as a text file
-with open(file_to_save, "w") as txt_file:
-# Write some data to this file.
-    txt_file.write("Counties in the Election\n")
-    txt_file.write("-------------------------\n")
-    txt_file.write("Arapahoe\nDenver\nJefferson")
-  
 
-# Close the file
-outfile.close()
 
 
     
