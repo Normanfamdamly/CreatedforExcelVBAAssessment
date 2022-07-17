@@ -9,8 +9,11 @@ file_to_Save = os.path.join("analysis", "election_analysis.txt")
 # 1. The total number of votes cast
 total_votes = 0
 
-# Canidate Options
+# Canidate Options and votes
 canidate_options = []
+
+# Declare empty dictionary
+canidate_votes = {}
 
 # Open election results and read the file
 with open(file_to_load) as election_data:
@@ -21,7 +24,7 @@ with open(file_to_load) as election_data:
     # Read Print the header row.
     headers = next(file_reader) 
 
-# Print each row in the CSV file.
+    # Print each row in the CSV file.
     for row in file_reader:
         # 2. A complete list of canidates who receied votes     
         total_votes += 1
@@ -32,10 +35,16 @@ with open(file_to_load) as election_data:
         # If the canidate does not any exisitng canidate . . .
         if canidate_name not in canidate_options:
             # Add the canidate name to the canidate list.
-            canidate_options.append(canidate_name)   
+            canidate_options.append(canidate_name)  
 
+            # 2. Begin tracking that canidates vote count.
+            canidate_votes[canidate_name]= 0
+
+         # Add a vote to the canidate's count.
+        canidate_votes[canidate_name] += 1
+            
 # 3a Print the total votes
-print(canidate_options)
+print(canidate_votes)
 
 
 
