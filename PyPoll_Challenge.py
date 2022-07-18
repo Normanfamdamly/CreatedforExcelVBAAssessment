@@ -27,7 +27,7 @@ winning_count = 0
 winning_percentage = 0
 
 # 2: Track the largest county and county voter turnout.
-Largest_county_turnout = ""
+largest_county_turnout = ""
 largest_county_votes = 0
 
 # Read the csv and convert it into a list of dictionaries
