@@ -14,7 +14,8 @@ A Colorado Board of Elections employee has asked that I complete the election au
 - Python 3.6.7, Visual Studio are the systems we are utilizing
 
 ## Summary
-The analysis of the elctions shows that 
+The analysis of the elctions shows that:
+
     Election Results
     -------------------------
     Total Votes: 369,711
