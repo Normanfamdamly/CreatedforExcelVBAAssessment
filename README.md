@@ -46,10 +46,10 @@ There was a large voter turn-out in Denver County which would be surpising consi
 ## Election Audit Summary
 The program has been written to allow for use in any other congressional race through out Cololrado.  All the main loops for the data, are maintained in a general format and can be plug and play for any district.  All that will need to be upated is the report name you are pulling the data from, as shown below.
 
-# Add a variable to load a file from a path.
-file_to_load = os.path.join("Resources", "election_results.csv")
-# Add a variable to save the file to a path.
-file_to_save = os.path.join("analysis", "election_analysis.txt")
+        # Add a variable to load a file from a path.
+        file_to_load = os.path.join("Resources", "election_results.csv")
+        # Add a variable to save the file to a path.
+        file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 If you wanted to use this for the Presidental Election, you could as well and there would not need to be any alterations at all. The code written for the candidate and county calcutions would work for Presidental candidates, all that would require up would be the file name you are loading the data from, plus the amount of time it would take to run. This would take longer due to the higher numbe of voters that historically turn out for Presidental elections.
 
