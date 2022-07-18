@@ -4,6 +4,7 @@
 A Colorado Board of Elections has asked that I complete the election audit of the recent congressional election, looking at data from paper-ballots, machines-ballots and mail-in ballots. The election data was provided in an electronic format for review.
 
 My analysis consisted of looking at the following seven items:
+
     1. Calculate the total number votes cast and voter turnout for each county.
     2. Gather a complete list of the candidates who received votes.
     3. Calculate the total number of votes each candidate received.
